@@ -1,22 +1,17 @@
 import csv
 
 
-path = 'StopNShopData.csv'
+path = 'C:\\Users\\hayde\\Documents\\GitHub\\TheLabRatsBostonHacks2019\\StopNShopData.csv'
 with open(path) as csvfile:
     reader = csv.reader(csvfile)
     edit = False
-    headers = True
     nums = []
     spreadsheet = []
     for row in reader:
         contents = []
         for column in row:
             if edit:
-                if headers:
-                    num = column.partition('\n')[0]
-                    headers = False
-                else:
-                    num = column.partition('\n')[0][1:]
+                num = column.partition('\n')[0]  
                 if num != "":
                     nums.append(num)
                     contents.append(num)
@@ -26,7 +21,7 @@ with open(path) as csvfile:
 
             edit = not edit
 
-    outpath = 'C:\\Users\\jlkaz\Documents\\GitHub\\TheLabRatsBostonHacks2019SnSCleanData.csv'
+    outpath = 'C:\\Users\\hayde\\Documents\\GitHub\\TheLabRatsBostonHacks2019\\SnSCleanData.csv'
     with open(outpath, 'w') as outfile:
         fieldnames = [spreadsheet[0][0], spreadsheet[0][1]]
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
@@ -35,6 +30,6 @@ with open(path) as csvfile:
             item = spreadsheet[row][0]
             price = spreadsheet[row][1]
             if item == "" or price == "":
-                #Do nothing
+                hi = True #Will this still error?
             else:
                 writer.writerow({spreadsheet[0][0]: spreadsheet[row][0], spreadsheet[0][1]:spreadsheet[row][1]})
