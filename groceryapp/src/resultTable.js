@@ -30,7 +30,7 @@ import InnerTable from './innerTable';
         const titleString = 'The searched item is ' + this.props.userInput
         return (
             <div>
-                <div>{titleString}</div>
+                <div id='title'>{titleString}</div>
                 <table id='groceryResults'>
                     <tbody>
                         {this.renderTableData()}
