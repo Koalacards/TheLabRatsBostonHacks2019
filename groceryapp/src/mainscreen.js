@@ -1,6 +1,6 @@
 import React from'react';
 import AboutText from './aboutText';
-import { ResultTable } from './resultTable';
+import ResultTable from './resultTable';
 
 class MainScreen extends React.Component {
     render() {

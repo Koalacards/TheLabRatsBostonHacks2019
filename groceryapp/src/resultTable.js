@@ -1,15 +1,15 @@
 import React from 'react';
+import InnerTable from './innerTable';
 
-export class ResultTable extends React.Component {
+ class ResultTable extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            searchedItem: 'cookies',
             results: [
-                { id: 'WholeFoods', subresults: 5},
-                { id: 'StopNShop', subresults: 5},
-                { id: 'StarMarket', subresults: 5},
-                { id: 'Target', subresults: 5},
+                { id: 'WholeFoods', subresults: <InnerTable />},
+                { id: 'StopNShop', subresults: <InnerTable />},
+                { id: 'StarMarket', subresults: <InnerTable />},
+                { id: 'Target', subresults: <InnerTable />},
             ]
         };
     }
@@ -40,3 +40,4 @@ export class ResultTable extends React.Component {
         );
     }
 }
+export default ResultTable;
