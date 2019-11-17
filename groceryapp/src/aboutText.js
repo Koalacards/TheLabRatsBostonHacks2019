@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 
-export function Result()  {
+function AboutText()  {
   return (
     <div>
       <header>
@@ -17,3 +17,5 @@ export function Result()  {
     </div>
   );
 };
+
+export default AboutText;

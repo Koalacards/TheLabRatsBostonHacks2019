@@ -1,23 +1,34 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
 
 
+class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: ""
+    };
+  }
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.onSubmit(this.state.value);
+  }
 
-export const NavBar = () => {
-  return(
-    <div>
-      <AppBar position = "static">
-        <Toolbar>
-          <Typography variant = "title" color = "inherit">
-          BUY GROCERIES
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </div>
-  )
-};
+  handleChange = event => {
+    this.setState({
+      value: event.target.value
+    });
+  }
+
+  render () {
+    return (
+      <form onSubmit={this.handleSubmit}> 
+        <input type='text' value={this.state.value} id='searchbar' onChange={this.handleChange}/>
+      </form>
+    );
+  }
+}
+
+export default NavBar
 
 // function App() {
 //   return (
