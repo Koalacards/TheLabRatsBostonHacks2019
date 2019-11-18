@@ -20,3 +20,130 @@
 .App-link {
   color: #09d3ac;
 }
+
+.fullscreen {
+  background-color: blue;
+  display: flex;
+}
+
+.nav-bar {
+  background-color: #09d3ac;
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  padding: 10px;
+
+}
+
+#aboutUsHead {
+  font-size: 24px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+#aboutUs {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 90%;
+}
+
+#searchbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 32px;
+  display: flex;
+  align-content: center;
+}
+
+.result-table {
+  font-size: 24;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  padding: 10px;
+}
+
+  #groceryResults {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid rgb(15, 7, 7);
+    width: 100%;
+  }
+
+  #groceryResults td, #groceryResults th {
+    border: 1 px solid rgb(15, 7, 7);
+    padding: 8px;
+  }
+
+  #groceryResults th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(165, 238, 168);
+    color: black;
+  }
+
+  #groceryResults tr {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(165, 238, 168);
+    color: black;
+    border: 3px solid rgb(15, 7, 7);
+    
+  }
+
+  #storeResults {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid rgb(15, 7, 7);
+    width: 100%;
+  }
+
+  #storeResults td, #storeResults th {
+    border: 3 px solid rgb(15, 7, 7);
+    padding: 8px;
+  }
+
+  #storeResults th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  #storeResults tr {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    border: 3px solid rgb(15, 7, 7);
+    
+  }
+
+  #storeResults th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+
