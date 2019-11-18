@@ -6,10 +6,14 @@ import InnerTable from './innerTable';
         super(props);
         this.state = {
             results: [
-                { id: 'WholeFoods', subresults: <InnerTable />},
-                { id: 'StopNShop', subresults: <InnerTable />},
-                { id: 'StarMarket', subresults: <InnerTable />},
-                { id: 'Target', subresults: <InnerTable />},
+                { id: 'WholeFoods', subresults: <InnerTable 
+                                                    userInput = {this.props.userInput} />},
+                { id: 'StopNShop', subresults: <InnerTable 
+                                                    userInput = {this.props.userInput} />},
+                { id: 'StarMarket', subresults: <InnerTable 
+                                                    userInput = {this.props.userInput} />},
+                { id: 'Target', subresults: <InnerTable 
+                                                    userInput = {this.props.userInput} />},
             ]
         };
     }

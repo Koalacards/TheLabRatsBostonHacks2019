@@ -5,10 +5,10 @@ class InnerTable extends React.Component {
         super(props);
         this.state = {
             results: [
-                { item: 'Food 1', price: 'price 1'},
-                { item: 'Food 2', price: 'price 2'},
-                { item: 'Food 3', price: 'price 3'},
-                { item: 'Food 4', price: 'price 4'},
+                { item: this.props.userInput + ' 1', price: 'price 1'},
+                { item: this.props.userInput + ' 2', price: 'price 2'},
+                { item: this.props.userInput + ' 3', price: 'price 3'},
+                { item: this.props.userInput + ' 4', price: 'price 4'},
             ]
         };
     }
