@@ -1,7 +1,7 @@
 import csv
 
 
-path = 'C:\\Users\\hayde\\Documents\\GitHub\\TheLabRatsBostonHacks2019\\Data.csv'
+path = 'C:\\Users\\jaron\\OneDrive\\Documents\\ACTUAL DOCS\\Work\\BostonHacks\\TheLabRatsBostonHacks2019\\Data.csv'
 with open(path) as csvfile:
     reader = csv.reader(csvfile)
     edit = False
@@ -26,7 +26,7 @@ with open(path) as csvfile:
                 
             edit = not edit
     
-    outpath = 'C:\\Users\\hayde\\Documents\\GitHub\\TheLabRatsBostonHacks2019\\Cleandata.csv'
+    outpath = 'C:\\Users\\jaron\\OneDrive\\Documents\\ACTUAL DOCS\\Work\\BostonHacks\\TheLabRatsBostonHacks2019\\Cleandata.csv'
     with open(outpath, 'w') as outfile:
         fieldnames = [spreadsheet[0][0], spreadsheet[0][1]]
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
