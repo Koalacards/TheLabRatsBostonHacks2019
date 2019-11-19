@@ -1,6 +1,6 @@
 import React from'react';
 import AboutText from './aboutText';
-import ResultTable from './resultTable';
+import NewResultTable from './resultTable';
 
 class MainScreen extends React.Component {
     render() {
@@ -13,7 +13,7 @@ class MainScreen extends React.Component {
         } else {
             return (
                 <div className="result-table">
-                    <ResultTable
+                    <NewResultTable
                         userInput={this.props.userInput}
                     />
                 </div>

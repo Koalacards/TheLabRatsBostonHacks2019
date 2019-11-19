@@ -12,7 +12,7 @@ function AboutText()  {
         The Lab Rats are a team of sophomores from Northeastern University who wanted
         to make something practical; something we all felt would have helped make
         our transition to college easier, along with being able to currently help
-        us for the rest of our years here.We thought, what contributes to experience
+        us for the rest of our years here. We thought, what contributes to our experience
         more than what we eat? We know the struggle of a broke college student trying
         to find the best deals around, and we also were frustrated with the lack
         of a single source to compare prices. That's when we decided to create

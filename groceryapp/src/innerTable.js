@@ -1,14 +1,14 @@
 import React from 'react';
 
 class InnerTable extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(userInput) {
+        super(userInput);
         this.state = {
             results: [
-                { item: this.props.userInput + ' 1', price: 'price 1'},
-                { item: this.props.userInput + ' 2', price: 'price 2'},
-                { item: this.props.userInput + ' 3', price: 'price 3'},
-                { item: this.props.userInput + ' 4', price: 'price 4'},
+                { item: userInput + ' 1', price: 'price 1'},
+                { item: userInput + ' 2', price: 'price 2'},
+                { item: userInput + ' 3', price: 'price 3'},
+                { item: userInput + ' 4', price: 'price 4'},
             ]
         };
     }
@@ -37,4 +37,5 @@ class InnerTable extends React.Component {
         );
     }
 }
-export default InnerTable;
+var NewInnerTable = new InnerTable(this.userInput);
+export default NewInnerTable;

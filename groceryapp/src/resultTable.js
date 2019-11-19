@@ -1,19 +1,19 @@
 import React from 'react';
-import InnerTable from './innerTable';
+import NewInnerTable from './innerTable';
 
  class ResultTable extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(userInput) {
+        super(userInput);
         this.state = {
             results: [
-                { id: 'WholeFoods', subresults: <InnerTable 
-                                                    userInput = {this.props.userInput} />},
-                { id: 'StopNShop', subresults: <InnerTable 
-                                                    userInput = {this.props.userInput} />},
-                { id: 'StarMarket', subresults: <InnerTable 
-                                                    userInput = {this.props.userInput} />},
-                { id: 'Target', subresults: <InnerTable 
-                                                    userInput = {this.props.userInput} />},
+                { id: 'WholeFoods', subresults: <NewInnerTable 
+                                                    userInput = {userInput} />},
+                { id: 'StopNShop', subresults: <NewInnerTable 
+                                                    userInput = {userInput} />},
+                { id: 'StarMarket', subresults: <NewInnerTable 
+                                                    userInput = {userInput} />},
+                { id: 'Target', subresults: <NewInnerTable 
+                                                    userInput = {userInput} />},
             ]
         };
     }
@@ -31,7 +31,7 @@ import InnerTable from './innerTable';
     }
 
     render() {
-        const titleString = 'The searched item is ' + this.props.userInput
+        const titleString = 'The searched item is ' + this.userInput
         return (
             <div>
                 <div id='title'>{titleString}</div>
@@ -44,4 +44,5 @@ import InnerTable from './innerTable';
         );
     }
 }
-export default ResultTable;
+const NewResultTable = new ResultTable(this.userInput);
+export default NewResultTable;
